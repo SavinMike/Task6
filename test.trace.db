@@ -1,0 +1,81 @@
+02-26 22:53:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "POSTS" уже существует
+Table "POSTS" already exists; SQL statement:
+CREATE TABLE posts(id int,postDate long,postMessage varchar(255))
+ [42101-170]
+02-26 22:53:31 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "INSERT INTO POSTS(POSTDATE,POSTMESSAGE) VALUES(1361894011322,HELLO MEN[*]) "; ожидалось "., (, [, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"
+Syntax error in SQL statement "INSERT INTO POSTS(POSTDATE,POSTMESSAGE) VALUES(1361894011322,HELLO MEN[*]) "; expected "., (, [, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO POSTS(postDate,postMessage) VALUES(1361894011322,Hello Men) [42001-170]
+02-26 23:01:26 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "POSTS" не найдена
+Table "POSTS" not found; SQL statement:
+INSERT INTO posts(postDate,postMessage) VALUES (1361894486221,'Hello men') [42102-170]
+02-26 23:01:43 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "POSTS" не найдена
+Table "POSTS" not found; SQL statement:
+INSERT INTO posts(postDate,postMessage) VALUES (1361894503584,'Hello men') [42102-170]
+02-26 23:09:29 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "POSTS" уже существует
+Table "POSTS" already exists; SQL statement:
+CREATE TABLE posts(id int NOT NULL AUTO_INCREMENT,postDate long,postMessage varchar(255))
+ [42101-170]
+02-26 23:21:56 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "DELETE *[*] FROM POST"; ожидалось "identifier"
+Syntax error in SQL statement "DELETE *[*] FROM POST"; expected "identifier"; SQL statement:
+DELETE * FROM POST [42001-170]
+02-26 23:22:26 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "DELETE *[*] FROM POSTS"; ожидалось "identifier"
+Syntax error in SQL statement "DELETE *[*] FROM POSTS"; expected "identifier"; SQL statement:
+DELETE * FROM POSTS [42001-170]
+02-27 00:07:51 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "POSTS" не найдена
+Table "POSTS" not found; SQL statement:
+INSERT INTO posts(id,postDate,postMessage) VALUES (LAST_INSERT_ID(),1361898471312,'add new') [42102-170]
+02-27 00:08:02 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "POSTS" не найдена
+Table "POSTS" not found; SQL statement:
+INSERT INTO posts(id,postDate,postMessage) VALUES (LAST_INSERT_ID(),1361898482563,'new') [42102-170]
+02-27 00:11:59 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "POSTS" не найдена
+Table "POSTS" not found; SQL statement:
+INSERT INTO posts(postDate,postMessage) VALUES (1361898719487,'new') [42102-170]
+02-27 00:12:16 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "POSTS" не найдена
+Table "POSTS" not found; SQL statement:
+INSERT INTO posts(postDate,postMessage) VALUES (1361898736292,'') [42102-170]
+02-27 00:12:26 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "POSTS" не найдена
+Table "POSTS" not found; SQL statement:
+INSERT INTO posts(postDate,postMessage) VALUES (1361898746367,'ads') [42102-170]
+02-27 00:13:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "POSTS" не найдена
+Table "POSTS" not found; SQL statement:
+INSERT INTO posts(postDate,postMessage) VALUES (1361898784323,'') [42102-170]
+02-27 00:13:16 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "POSTS" не найдена
+Table "POSTS" not found; SQL statement:
+INSERT INTO posts(postDate,postMessage) VALUES (1361898796719,'asd') [42102-170]
+02-27 00:13:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "POSTS" не найдена
+Table "POSTS" not found; SQL statement:
+INSERT INTO posts(postDate,postMessage) VALUES (1361898818877,'asd') [42102-170]
+02-27 00:14:43 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "CREATE TABLE POSTS(ID INT PRIMARY KEY IDENTITY[*],POSTDATE LONG,POSTMESSAGE VARCHAR(255),)
+ "; ожидалось "HASH, AUTO_INCREMENT, NOT, NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE POSTS(ID INT PRIMARY KEY IDENTITY[*],POSTDATE LONG,POSTMESSAGE VARCHAR(255),)
+ "; expected "HASH, AUTO_INCREMENT, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE posts(id int PRIMARY KEY IDENTITY,postDate long,postMessage varchar(255),)
+ [42001-170]
+02-27 00:14:59 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "CREATE TABLE POSTS(ID INT PRIMARY KEY IDENTITY[*],POSTDATE LONG,POSTMESSAGE VARCHAR(255),)
+ "; ожидалось "HASH, AUTO_INCREMENT, NOT, NULL, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "CREATE TABLE POSTS(ID INT PRIMARY KEY IDENTITY[*],POSTDATE LONG,POSTMESSAGE VARCHAR(255),)
+ "; expected "HASH, AUTO_INCREMENT, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE posts(id int PRIMARY KEY IDENTITY,postDate long,postMessage varchar(255),)
+ [42001-170]
+02-27 00:16:28 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "POSTS" уже существует
+Table "POSTS" already exists; SQL statement:
+CREATE TABLE posts(id int NOT NULL AUTO_INCREMENT,postDate long,postMessage varchar(255),PRIMARY KEY (id))
+ [42101-170]
